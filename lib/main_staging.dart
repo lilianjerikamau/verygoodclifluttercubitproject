@@ -7,7 +7,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:very_good_project/cubit%20/post_fetch_cubit.dart';
+import 'package:very_good_project/cubit/post_fetch_cubit.dart';
+
 import 'package:very_good_project/repository/api_repository.dart';
 import 'package:very_good_project/screens/home_page.dart';
 import 'package:very_good_project/service/api_service.dart';
