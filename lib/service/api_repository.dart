@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
 
 import '../models/post_model.dart';
-import '../service/api_service.dart';
+import 'api_service.dart';
 
 class ApiRepository {
   const ApiRepository({

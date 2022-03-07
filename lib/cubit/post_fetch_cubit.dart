@@ -1,7 +1,7 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:very_good_project/models/failure_model.dart';
-import 'package:very_good_project/repository/api_repository.dart';
+import 'package:very_good_project/service/api_repository.dart';
 
 import '../models/post_model.dart';
 
