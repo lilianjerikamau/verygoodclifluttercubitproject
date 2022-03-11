@@ -3,8 +3,19 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:very_good_project/cubit/post_fetch_cubit.dart';
 import 'package:very_good_project/models/_index.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
+
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  void initState() {
+    super.initState();
+
+    context.read<PostFetchCubit>().fetchPostApi();
+  }
 
   @override
   Widget build(BuildContext context) {

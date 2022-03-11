@@ -1,7 +1,7 @@
 part of very_good_project;
 
 class ApiRepository {
-  const ApiRepository({
+  ApiRepository({
     required this.apiService,
   });
   final ApiService apiService;
@@ -15,5 +15,20 @@ class ApiRepository {
               PostModelTrial.fromJson(singlePost as Map<String, dynamic>),
         )
         .toList();
+  }
+}
+
+class ApiService {
+  final Dio _dio = Dio();
+  final _baseUrl = ProjectConfig.instance!.values.baseDomain;
+  Future<Response<dynamic>> getPostData() async {
+    final _mediaApiUrl = '$_baseUrl/posts';
+    try {
+      final response = await _dio.get<dynamic>(_mediaApiUrl);
+      return response;
+    } catch (err) {
+      print('Error :$err');
+      rethrow;
+    }
   }
 }

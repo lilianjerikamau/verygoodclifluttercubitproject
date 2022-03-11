@@ -7,5 +7,5 @@ part 'post_model_trial.dart';
 
 // Generated model files
 
-part 'post_model_trial.freezed.dart';
-part 'post_model_trial.g.dart';
+part '_index.freezed.dart';
+part '_index.g.dart';

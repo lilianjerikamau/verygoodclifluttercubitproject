@@ -20,6 +20,11 @@ import 'package:very_good_project/utils/_index.dart';
 import 'package:very_good_project/service/_index.dart';
 
 void main() {
+  ProjectConfig(
+    values: ProjectValues(
+      baseDomain: 'https://jsonplaceholder.typicode.com',
+    ),
+  );
   bootstrap(
     () => MultiBlocProvider(
       providers: Singletons.registerCubits(),

@@ -4,6 +4,6 @@ import 'package:dio/dio.dart';
 import 'package:very_good_project/models/_index.dart';
 import 'package:very_good_project/utils/_index.dart';
 
-part 'api_repository.dart';
+part 'api_service.dart';
 
-ApiService apiService = ApiService();
+NetworkUtil _networkUtil = NetworkUtil();

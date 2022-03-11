@@ -4,7 +4,7 @@ part of very_good_project;
 
 class Singletons {
   // static late final ApiService apiService;
-  // final apiRepository = ApiRepository();
+  static final apiService = ApiService();
 
   static List<BlocProvider> registerCubits() => [
         BlocProvider<PostFetchCubit>(
@@ -12,7 +12,7 @@ class Singletons {
             apiRepository: ApiRepository(
               apiService: apiService,
             ),
-          )..fetchPostApi(),
+          ),
         ),
       ];
 }

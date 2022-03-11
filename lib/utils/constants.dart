@@ -21,4 +21,4 @@ class ProjectConfig {
   static ProjectConfig? get instance => _instance;
 }
 
-const String baseUrl = 'https://jsonplaceholder.typicode.com/posts';
+// const String baseUrl = 'https://jsonplaceholder.typicode.com/posts';
