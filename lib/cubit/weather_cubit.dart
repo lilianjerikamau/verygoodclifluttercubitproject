@@ -2,7 +2,7 @@ import 'package:bloc/bloc.dart';
 
 import 'package:meta/meta.dart';
 import 'package:very_good_project/models/weather.dart';
-import 'package:very_good_project/screens/weather_search_page.dart';
+
 import 'package:very_good_project/service/weather_repository.dart';
 
 part 'weather_state.dart';

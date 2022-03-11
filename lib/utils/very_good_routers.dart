@@ -1,6 +1,6 @@
 part of very_good_project;
 
-class VeryGoodRouter {
+class ProjectRouter {
   static const String decisionRoute = '/';
   static const String landingRoute = '/landing';
 

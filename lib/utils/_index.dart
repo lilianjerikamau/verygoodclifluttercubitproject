@@ -8,7 +8,7 @@ import 'package:very_good_project/cubit/post_fetch_cubit.dart';
 import 'package:very_good_project/models/_index.dart';
 import 'package:logger/logger.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:very_good_project/screens/home_page.dart';
+import 'package:very_good_project/app/view/home_page.dart';
 import 'package:very_good_project/service/_index.dart';
 import 'package:very_good_project/cubit/post_fetch_cubit.dart';
 
