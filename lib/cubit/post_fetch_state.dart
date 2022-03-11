@@ -11,7 +11,7 @@ class PostFetchInitial extends PostFetchState {}
 class PostFetchLoading extends PostFetchState {}
 
 class PostFetchLoaded extends PostFetchState {
-  final List<Post> postList;
+  final List<PostModelTrial> postList;
 
   PostFetchLoaded({required this.postList});
   @override

@@ -1,9 +1,11 @@
-import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
-import 'package:very_good_project/models/failure_model.dart';
-import 'package:very_good_project/service/api_repository.dart';
 
-import '../models/post_model.dart';
+import 'package:bloc/bloc.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
+
+import 'package:very_good_project/models/_index.dart';
+
+import '../service/_index.dart';
 
 part 'post_fetch_state.dart';
 
@@ -17,7 +19,7 @@ class PostFetchCubit extends Cubit<PostFetchState> {
   Future<void> fetchPostApi() async {
     emit(PostFetchLoading());
     try {
-      final List<Post>? postList = await apiRepository.getPostList();
+      final List<PostModelTrial>? postList = await apiRepository.getPostList();
       emit(PostFetchLoaded(postList: postList ?? []));
     } on Failure catch (err) {
       emit(PostFetchError(failure: err));
