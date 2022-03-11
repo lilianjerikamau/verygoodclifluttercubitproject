@@ -8,7 +8,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:very_good_project/l10n/l10n.dart';
-import 'package:very_good_project/app/view/home_page.dart';
+import 'package:very_good_project/cubit/lister.dart';
 import 'package:very_good_project/utils/_index.dart';
 
 class App extends StatelessWidget {
