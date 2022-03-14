@@ -15,7 +15,7 @@ class ProjectRouter {
         );
       case weatherRoute:
         return _route(
-          const WeatherPage(),
+          const LoginForm(),
         );
       default:
         return _route(
