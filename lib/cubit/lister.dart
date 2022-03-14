@@ -27,7 +27,7 @@ class _HomePageState extends State<HomePage> {
         body: BlocBuilder<PostFetchCubit, PostFetchState>(
           builder: (context, state) {
             if (state is PostFetchLoading) {
-              return CircularProgressIndicator();
+              return const CircularProgressIndicator();
             } else {
               if (state is PostFetchError) {
                 return Text(state.failure.message);
@@ -61,6 +61,21 @@ class _HomePageState extends State<HomePage> {
             }
           },
         ),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {
+            Navigator.pushNamed(context, '/weatherRoute');
+          },
+          backgroundColor: Colors.black,
+          tooltip: 'Capture Picture',
+          elevation: 5,
+          splashColor: Colors.grey,
+          child: const Icon(
+            Icons.camera,
+            color: Colors.white,
+            size: 29,
+          ),
+        ),
+        floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       ),
     );
   }

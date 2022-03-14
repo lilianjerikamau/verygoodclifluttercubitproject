@@ -5,5 +5,6 @@ import 'package:very_good_project/models/_index.dart';
 import 'package:very_good_project/utils/_index.dart';
 
 part 'api_service.dart';
+part 'weather_service.dart';
 
 NetworkUtil _networkUtil = NetworkUtil();

@@ -3,6 +3,7 @@ part of very_good_project;
 class ProjectRouter {
   static const String decisionRoute = '/';
   static const String landingRoute = '/landing';
+  static const String weatherRoute = '/weather';
 
   static Route<dynamic> generateRoute(RouteSettings settings) {
     // final _args = settings.arguments;
@@ -11,6 +12,10 @@ class ProjectRouter {
       case landingRoute:
         return _route(
           const HomePage(),
+        );
+      case weatherRoute:
+        return _route(
+          const WeatherPage(),
         );
       default:
         return _route(
